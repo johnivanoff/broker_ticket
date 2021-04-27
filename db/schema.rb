@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2021_04_27_031050) do
     t.integer "hauler_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "broker_type_id"
+    t.integer "broker_ticket_type_id"
     t.index ["hauler_id"], name: "index_ticket_types_on_hauler_id"
   end
 

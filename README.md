@@ -1,3 +1,9 @@
+how I added the model and column
+```
+% docker-compose exec web bin/rails g model BrokerTicketType name description:text
+% docker-compose exec web bin/rails g migration AddBrokerTypeToTicketType broker_ticket_type_id:integer
+```
+
 ```
 $ docker build -t broker_tickets .
 $ docker-compose up

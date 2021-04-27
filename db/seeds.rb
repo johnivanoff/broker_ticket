@@ -5,11 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Hauler.destroy_all
 TicketType.destroy_all
+Hauler.destroy_all
+BrokerTicketType.destroy_all
 
 haulers = Hauler.create([{ name: 'BD' }, { name: 'AMD' }])
 
-TicketType.create(name: 'new delivery', hauler: haulers.first)
-TicketType.create(name: 'swap', hauler: haulers.last)
-TicketType.create(name: 'new delivery', hauler: haulers.first)
+TicketType.create(name: 'deliverynew', hauler: haulers.first)
+TicketType.create(name: 'replace', hauler: haulers.last)
+TicketType.create(name: 'new dumpster delivery', hauler: haulers.first)
+
+BrokerTicketType.create(name: 'new delivery', description: 'this is a description')
+BrokerTicketType.create(name: 'swap', description: 'this is a description')
+BrokerTicketType.create(name: 'new delivery', description: 'this is a description')

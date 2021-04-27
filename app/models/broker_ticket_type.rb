@@ -1,0 +1,2 @@
+class BrokerTicketType < ApplicationRecord
+end

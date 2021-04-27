@@ -1,0 +1,2 @@
+class Hauler < ApplicationRecord
+end

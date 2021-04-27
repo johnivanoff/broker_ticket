@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Hauler.destroy_all
+
+haulers = Hauler.create([{ name: 'BD' }, { name: 'AMD' }])
